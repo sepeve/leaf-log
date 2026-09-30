@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { PlantListPage } from './pages/PlantList';
+import { ExplorePage } from './pages/Explore';
 import { Layout } from './layout/AppLayout';
 import { HomePage } from './pages/Home';
 
@@ -13,8 +13,8 @@ export const ROUTES = createBrowserRouter([
                 element: <HomePage />,
             },
             {
-                path: "plant-list",
-                element: <PlantListPage />,
+                path: "explore",
+                element: <ExplorePage />,
             },
         ],
     }

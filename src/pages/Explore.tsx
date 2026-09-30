@@ -5,7 +5,7 @@ import axios from 'axios';
 import z from 'zod';
 import { TextField } from '@mui/material';
 
-export function PlantListPage() {
+export function ExplorePage() {
 
     const [loading, setLoading] = useState<boolean>(false);
     const [plantResponse, setPlantResponse] = useState<PlantsResponse | null>(null);
