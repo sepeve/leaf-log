@@ -12,9 +12,9 @@ export function Layout() {
     }
 
     return (
-        <div className='flex flex-col min-h-screen min-w-screen gap-8'>
+        <>
             <Header menu={menu} menuItemClicked={onMenuItemClicked} />
             <Outlet />
-        </div>
+        </>
     )
 }
