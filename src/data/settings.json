@@ -1,0 +1,6 @@
+{
+    "menu": [
+        { "id": "search", "label": "Search", "href": "/search" },
+        { "id": "my-plants", "label": "My Plants", "href": "/my-plants" }
+    ]
+}
