@@ -1,6 +1,6 @@
 {
     "menu": [
-        { "id": "search", "label": "Search", "href": "/search" },
+        { "id": "plant-list", "label": "Plant List", "href": "/plant-list" },
         { "id": "my-plants", "label": "My Plants", "href": "/my-plants" }
     ]
 }
