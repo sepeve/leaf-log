@@ -6,20 +6,14 @@ interface InputProps {
     placeholder?: string;
     value: string;
     extraClasses?: string;
-    onValueChange: (value: string) => void
+    onValueChange: (value: string) => void;
 }
 
 export const Input = ({ icon, placeholder, value, extraClasses, onValueChange }: InputProps) => {
     return (
-        <Paper
-            component="form"
-            className="flex flex-1 items-center gap-2 border border-secondary"
-        >
+        <Paper component="form" className="flex flex-1 items-center gap-2 border border-secondary">
             {icon && (
-                <span
-                    aria-hidden="true"
-                    className="ml-2 flex shrink-0 items-center text-secondary"
-                >
+                <span aria-hidden="true" className="ml-2 flex shrink-0 items-center text-secondary">
                     {icon}
                 </span>
             )}
@@ -30,8 +24,6 @@ export const Input = ({ icon, placeholder, value, extraClasses, onValueChange }:
                 onChange={(e) => onValueChange(e.target.value)}
                 inputProps={{ 'aria-label': placeholder }}
             />
-    
         </Paper>
-
-    )
-}
+    );
+};

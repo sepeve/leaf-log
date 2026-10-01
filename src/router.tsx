@@ -1,10 +1,10 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from 'react-router-dom';
 import { Layout } from './layout/Layout';
 import { ExplorePage, HomePage } from './pages';
 
-export const ROUTES = createBrowserRouter([    
+export const ROUTES = createBrowserRouter([
     {
-        path: "/",
+        path: '/',
         element: <Layout />,
         children: [
             {
@@ -12,9 +12,9 @@ export const ROUTES = createBrowserRouter([
                 element: <HomePage />,
             },
             {
-                path: "explore",
+                path: 'explore',
                 element: <ExplorePage />,
             },
         ],
-    }
+    },
 ]);

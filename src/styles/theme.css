@@ -1,46 +1,44 @@
-@import "./variables.css";
+@import './variables.css';
 
 @theme {
-    --color-cream-50: #FDFCF8;
-    --color-cream-100: #F8F5ED;
-    --color-cream-200: #EFEADF;
-    --color-cream-300: #E1DACC;
+    --color-cream-50: #fdfcf8;
+    --color-cream-100: #f8f5ed;
+    --color-cream-200: #efeadf;
+    --color-cream-300: #e1dacc;
 
-    --color-forest-50: #EEF4F0;
-    --color-forest-100: #DCE9E0;
-    --color-forest-200: #B9D2C1;
-    --color-forest-300: #8FB39C;
+    --color-forest-50: #eef4f0;
+    --color-forest-100: #dce9e0;
+    --color-forest-200: #b9d2c1;
+    --color-forest-300: #8fb39c;
     --color-forest-400: #609078;
-    --color-forest-500: #3B715B;
-    --color-forest-600: #285A48;
-    --color-forest-700: #1F493B;
-    --color-forest-800: #173A30;
-    --color-forest-900: #10312A;
-    --color-forest-950: #09201B;
+    --color-forest-500: #3b715b;
+    --color-forest-600: #285a48;
+    --color-forest-700: #1f493b;
+    --color-forest-800: #173a30;
+    --color-forest-900: #10312a;
+    --color-forest-950: #09201b;
 
-    --color-sage-50: #F5F7F2;
-    --color-sage-100: #E9EDE3;
-    --color-sage-200: #D6DFCE;
-    --color-sage-300: #BACBB0;
-    --color-sage-400: #98AF8C;
-    --color-sage-500: #78936C;
-    --color-sage-600: #5E7654;
-    --color-sage-700: #4B5E44;
-    --color-sage-800: #3E4D39;
+    --color-sage-50: #f5f7f2;
+    --color-sage-100: #e9ede3;
+    --color-sage-200: #d6dfce;
+    --color-sage-300: #bacbb0;
+    --color-sage-400: #98af8c;
+    --color-sage-500: #78936c;
+    --color-sage-600: #5e7654;
+    --color-sage-700: #4b5e44;
+    --color-sage-800: #3e4d39;
     --color-sage-900: #344031;
 
-
-    --color-terracotta-50: #FBF3EF;
-    --color-terracotta-100: #F5E3D9;
-    --color-terracotta-200: #EBC5B1;
-    --color-terracotta-300: #DDA181;
-    --color-terracotta-400: #CB7956;
-    --color-terracotta-500: #B65F3E;
-    --color-terracotta-600: #99482F;
-    --color-terracotta-700: #7D3928;
+    --color-terracotta-50: #fbf3ef;
+    --color-terracotta-100: #f5e3d9;
+    --color-terracotta-200: #ebc5b1;
+    --color-terracotta-300: #dda181;
+    --color-terracotta-400: #cb7956;
+    --color-terracotta-500: #b65f3e;
+    --color-terracotta-600: #99482f;
+    --color-terracotta-700: #7d3928;
     --color-terracotta-800: #673125;
-    --color-terracotta-900: #562A22;
-
+    --color-terracotta-900: #562a22;
 
     /* ──────────────────────────────
        Semantic colors

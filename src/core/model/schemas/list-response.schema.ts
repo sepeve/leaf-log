@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from 'zod';
 
 export const createListResponseSchema = <T extends z.ZodType>(itemSchema: T) => {
     return z.object({
@@ -9,5 +9,5 @@ export const createListResponseSchema = <T extends z.ZodType>(itemSchema: T) => 
         current_page: z.number(),
         last_page: z.number(),
         total: z.number(),
-    })
-}
+    });
+};

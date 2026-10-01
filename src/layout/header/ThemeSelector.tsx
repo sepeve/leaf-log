@@ -7,8 +7,12 @@ export const ThemeSelector = () => {
     const { mode, toggleTheme } = useThemeMode();
 
     return (
-        <IconButton aria-label="Toggle theme" className="text-primary" onClick={() => toggleTheme()}>
-            { mode === 'light' ? <DarkModeIcon /> : <LightModeIcon /> }
+        <IconButton
+            aria-label="Toggle theme"
+            className="text-primary"
+            onClick={() => toggleTheme()}
+        >
+            {mode === 'light' ? <DarkModeIcon /> : <LightModeIcon />}
         </IconButton>
-    )
-}
+    );
+};

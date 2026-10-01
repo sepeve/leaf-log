@@ -1,7 +1,6 @@
-
 import { Header } from './header';
 import { useSettings } from '../core/context/SettingsContext';
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
 
 export function Layout() {
     const { menu } = useSettings();
@@ -11,5 +10,5 @@ export function Layout() {
             <Header menu={menu} />
             <Outlet />
         </div>
-    )
+    );
 }

@@ -1,9 +1,6 @@
-import {
-    createTheme,
-    responsiveFontSizes,
-} from '@mui/material/styles'
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
-import type { } from '@mui/material/themeCssVarsAugmentation'
+import type {} from '@mui/material/themeCssVarsAugmentation';
 
 const theme = createTheme({
     shape: {
@@ -47,6 +44,6 @@ const theme = createTheme({
             },
         },
     },
-})
+});
 
 export const botanicalJournalTheme = responsiveFontSizes(theme);
