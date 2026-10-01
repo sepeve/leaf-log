@@ -1,0 +1,47 @@
+
+:root {
+    --background: #F8F5ED;
+    --surface: #FDFCF8;
+
+    --foreground: #123A34;
+    --muted: #696B67;
+
+    --border: #D8D4C9;
+
+    --primary: #285A48;
+    --primary-hover: #1F493B;
+    --primary-foreground: #FFFFFF;
+
+    --secondary: #78936C;
+    --secondary-hover: #5E7654;
+    --secondary-foreground: #FFFFFF;
+
+    --surface-muted: #E9EDE3;
+}
+
+.dark {
+    --background: #1B2D25;
+
+    /* Cards / superficies elevadas */
+    --surface: #24382F;
+
+    /* Elementos secundarios */
+    --surface-muted: #30483C;
+
+    /* Texto */
+    --foreground: #F0F3EC;
+    --muted: #B8C3B9;
+
+    /* Bordes */
+    --border: #40594C;
+
+    /* Primary */
+    --primary: #A5C7AD;
+    --primary-hover: #C0D9C5;
+    --primary-foreground: #173126;
+
+    /* Secondary */
+    --secondary: #9DB491;
+    --secondary-hover: #B8CAA9;
+    --secondary-foreground: #1B2D25;
+}

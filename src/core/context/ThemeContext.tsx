@@ -1,7 +1,7 @@
 import { CssBaseline, type PaletteMode } from '@mui/material'
 import { ThemeProvider } from '@mui/material/styles'
 import { createContext, useContext, useEffect, useMemo, useState, type FC, type ReactNode } from 'react'
-import { botanicalJournalThemes } from '../../theme';
+import { botanicalJournalTheme } from '../../theme';
 
 type ThemeModeContextValue = {
     mode: PaletteMode,
@@ -34,6 +34,10 @@ export const ThemeModeProvider: FC<{ children: ReactNode }> = ({ children }) => 
     const [mode, setMode] = useState<PaletteMode>(getInitialMode);
 
     useEffect(() => {
+
+        const root = document.documentElement;
+        root.classList.toggle('dark', mode === 'dark');
+
         try {
             localStorage.setItem(STORAGE_KEY, mode);
         } catch {
@@ -44,13 +48,13 @@ export const ThemeModeProvider: FC<{ children: ReactNode }> = ({ children }) => 
     const value = useMemo<ThemeModeContextValue>(() => ({
         mode,
         toggleTheme: () => {
-            setMode((current) => (current === 'light' ? 'dark': 'light'))
+            setMode((current) => (current === 'light' ? 'dark': 'light'));
         }
     }), [mode])
 
     return(
         <ThemeModeContext.Provider value={value}>
-            <ThemeProvider theme={botanicalJournalThemes[mode]}>
+            <ThemeProvider theme={botanicalJournalTheme}>
                 <CssBaseline enableColorScheme />   
                 { children }
             </ThemeProvider>

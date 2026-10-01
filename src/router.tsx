@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import { ExplorePage } from './pages/Explore';
-import { Layout } from './layout/AppLayout';
-import { HomePage } from './pages/Home';
+import { Layout } from './layout/Layout';
+import { ExplorePage, HomePage } from './pages';
 
 export const ROUTES = createBrowserRouter([    
     {

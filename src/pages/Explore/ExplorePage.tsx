@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import type { Plant, PlantsResponse } from '../core/model';
-import { getPlants } from '../core/services/plant.service';
 import axios from 'axios';
 import z from 'zod';
 import { TextField } from '@mui/material';
+import type { Plant, PlantsResponse } from '../../core/model';
+import { getPlants } from '../../core/services/plant.service';
 
 export function ExplorePage() {
 

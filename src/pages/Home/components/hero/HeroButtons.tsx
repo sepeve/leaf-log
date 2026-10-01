@@ -9,19 +9,17 @@ export const HeroButtons = () => {
                 component={RouterLink}
                 to="/explore"
                 variant="contained"
-                color="primary"
                 endIcon={<ArrowForwardRoundedIcon />}
-                className="rounded-xl text-lg px-8 py-4"
+                className="rounded-xl text-lg px-8 py-4 bg-forest-600 text-white hover:bg-forest-800"
             >
                 Explore plants
             </Button>
-
             <Button
                 component={RouterLink}
                 to="/my-plants"
                 variant="outlined"
                 color="primary"
-                className="rounded-xl text-lg px-8 py-4"
+                className="rounded-xl text-lg px-8 py-4 bg-transparent border-forest-600 text-forest-600 hover:text-forest-800 hover:border-forest-800"
             >
                 My collection
             </Button>

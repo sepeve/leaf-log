@@ -1,14 +1,11 @@
 import { Box, Typography } from '@mui/material';
-import SpaOutlinedIcon from '@mui/icons-material/SpaOutlined';
 import { Link as RouterLink } from 'react-router-dom'
+import { LeafLogLogo } from '../../assets/icons';
 
 export const Logo = () => {
     return(
         <Box className="flex flex-1 items-center gap-2 cursor-pointer">
-            <SpaOutlinedIcon
-                aria-hidden="true"
-                className="size-10"
-            />
+            <LeafLogLogo />
             <Typography
                 component={RouterLink}
                 to="/"
