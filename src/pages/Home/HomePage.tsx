@@ -1,5 +1,7 @@
 import { useCallback } from 'react';
 import { HeroSection, Searcher } from './components';
+import { Journal } from './components/journal/Journal';
+
 
 export function HomePage() {
     
@@ -14,6 +16,7 @@ export function HomePage() {
         <>
             <HeroSection />
             <Searcher onSearch={handleSearch}/>
+            <Journal />
         </>
     )
 }
