@@ -1,6 +1,7 @@
-import { Button, IconButton, InputBase, Paper, Typography } from '@mui/material'
+import { Button, Typography } from '@mui/material'
 import { useState } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
+import { Input } from '../../../../components';
 
 interface SearcherProps {
     onSearch: (value: string) => void
@@ -18,23 +19,12 @@ export const Searcher = ({ onSearch }: SearcherProps) => {
                 Find your next plant
             </Typography>
             <div className="flex gap-2 items-center">                
-                <Paper
-                    component="form"
-                    className="flex-1 flex gap-2 items-center border border-secondary"
-                >
-                    <IconButton className="shrink-0" aria-label="search">
-                        <SearchIcon />
-                    </IconButton>
-
-                    <InputBase
-                        className="flex-1 py-2"
-                        placeholder="Search plants, e.g. monstera"
-                        value={searchValue}
-                        onChange={(e) => setSearchValue(e.target.value)}
-                        inputProps={{ 'aria-label': 'search plants' }}
-                    />
-            
-                </Paper>
+                <Input
+                    icon={<SearchIcon />}
+                    placeholder="Search plants, e.g. monstera"
+                    value={searchValue}
+                    onValueChange={setSearchValue}
+                />
 
                 <Button
                     variant="contained"
