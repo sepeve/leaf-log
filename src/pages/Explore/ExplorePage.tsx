@@ -28,11 +28,12 @@ export function ExplorePage() {
                 }
             } catch(error: unknown) {
                  if (error instanceof z.ZodError) {
-                    setError(`Invalid respose: ${error.issues}`);
+                    const details = error.issues.map((issue) => issue.message).join('; ');
+                    setError(`Invalid response: ${details}`);
                 } else if (axios.isAxiosError(error)) {
                     setError(`API error: ${error.message}`);
                 } else {
-                    setError(`Unexpected error::${error}`);
+                    setError(`Unexpected error: ${error instanceof Error ? error.message : 'Unknown error'}`);
                 }
             } finally {
                 setLoading(false);
