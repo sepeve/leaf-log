@@ -1,10 +1,10 @@
-import { LoaderContext } from '@/core/context/LoaderContext'
-import { useContext } from 'react'
+import { LoaderContext } from '@/core/context/LoaderContext';
+import { useContext } from 'react';
 
 export const useLoader = () => {
     const context = useContext(LoaderContext);
     if (!context) {
-        throw new Error("useLoader must be used within a LoaderProvider");
+        throw new Error('useLoader must be used within a LoaderProvider');
     }
     return context;
-}
+};

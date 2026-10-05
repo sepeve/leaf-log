@@ -39,18 +39,17 @@ export const useExplore = () => {
                 hideLoader();
             }
         };
-        
-        if(search.length) {
+
+        if (search.length) {
             const controller = new AbortController();
             void loadPlants(controller);
             return () => controller.abort();
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [search]);
-
 
     return {
         plantResponse,
         setSearch,
-    }
-}
+    };
+};

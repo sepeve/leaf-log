@@ -4,12 +4,14 @@ import { Journal } from './components/journal/Journal';
 import { useNavigate } from 'react-router-dom';
 
 export function HomePage() {
-
     const navigate = useNavigate();
-    const handleSearch = useCallback((value: string) => {
-        const url = `/explore/${encodeURIComponent(value)}`;
-        void navigate(url);
-    }, [navigate]);
+    const handleSearch = useCallback(
+        (value: string) => {
+            const url = `/explore/${encodeURIComponent(value)}`;
+            void navigate(url);
+        },
+        [navigate],
+    );
 
     return (
         <>

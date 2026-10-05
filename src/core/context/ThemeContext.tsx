@@ -1,13 +1,6 @@
 import { CssBaseline, type PaletteMode } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
-import {
-    createContext,
-    useEffect,
-    useMemo,
-    useState,
-    type FC,
-    type ReactNode,
-} from 'react';
+import { createContext, useEffect, useMemo, useState, type FC, type ReactNode } from 'react';
 import { botanicalJournalTheme } from '../../theme';
 
 type ThemeModeContextValue = {
@@ -67,9 +60,8 @@ const ThemeModeProvider: FC<{ children: ReactNode }> = ({ children }) => {
     );
 };
 
-
 export {
     // eslint-disable-next-line react-refresh/only-export-components
     ThemeModeContext,
-    ThemeModeProvider
-}
+    ThemeModeProvider,
+};

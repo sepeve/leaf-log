@@ -4,21 +4,21 @@ import SearchIcon from '@mui/icons-material/Search';
 import { Input } from '@/components';
 
 interface InputSearchProps {
-    initialValue?: string;    
+    initialValue?: string;
     onSearch: (value: string) => void;
 }
 
 export const InputSearch = ({ initialValue, onSearch }: InputSearchProps) => {
     const [searchValue, setSearchValue] = useState<string>(initialValue || '');
-    return (  
-
+    return (
         <Paper
             component="form"
             className="flex gap-2 border-none bg-transparent"
             onSubmit={(event) => {
                 event.preventDefault();
                 onSearch(searchValue);
-            }}>
+            }}
+        >
             <Input
                 icon={<SearchIcon />}
                 placeholder="Search plants, e.g. monstera"
@@ -35,4 +35,4 @@ export const InputSearch = ({ initialValue, onSearch }: InputSearchProps) => {
             </Button>
         </Paper>
     );
-}
+};

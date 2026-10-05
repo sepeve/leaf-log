@@ -1,2 +1,2 @@
-export * from "./input-search/InputSearch";
-export * from "./input/Input";
+export * from './input-search/InputSearch';
+export * from './input/Input';

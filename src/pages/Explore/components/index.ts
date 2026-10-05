@@ -1,2 +1,2 @@
-export * from "./hero";
-export * from "./search-result";
+export * from './hero';
+export * from './search-result';

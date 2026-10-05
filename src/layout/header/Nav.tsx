@@ -10,7 +10,11 @@ export const Nav = ({ menu }: NavProps) => {
     return (
         <nav className="flex items-center gap-4">
             {menu.map(({ label, href }) => (
-                <Link to={href} key={label} className="text-foreground transition-colors hover:text-primary">
+                <Link
+                    to={href}
+                    key={label}
+                    className="text-foreground transition-colors hover:text-primary"
+                >
                     {label}
                 </Link>
             ))}

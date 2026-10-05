@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 
 export const HeroContent = () => {
-    return(
+    return (
         <div className="flex flex-col gap-4 text-foreground">
             <Typography
                 component="p"
@@ -17,13 +17,9 @@ export const HeroContent = () => {
                 Find your next green companion.
             </Typography>
 
-            <Typography
-                component="p"
-                variant="body1"
-                className="text-lg"
-            >
+            <Typography component="p" variant="body1" className="text-lg">
                 Discover plant species and grow your personal collection.
             </Typography>
         </div>
     );
-}
+};

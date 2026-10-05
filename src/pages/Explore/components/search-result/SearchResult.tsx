@@ -1,11 +1,11 @@
 import type { Plant } from '@/core/model';
 
 interface SearchResultProps {
-    plants: Plant[]
+    plants: Plant[];
 }
 
 export const SearchResult = ({ plants }: SearchResultProps) => {
-    return (      
+    return (
         <ul>
             {plants.map((plant: Plant) => (
                 <li key={plant.id} className="flex gap-2 text-foreground">
@@ -15,5 +15,5 @@ export const SearchResult = ({ plants }: SearchResultProps) => {
                 </li>
             ))}
         </ul>
-    )
-}
+    );
+};

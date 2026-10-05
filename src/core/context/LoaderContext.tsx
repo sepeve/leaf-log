@@ -4,11 +4,11 @@ import { createContext, useState, type FC, type ReactNode } from 'react';
 type Loader = {
     showLoader: () => void;
     hideLoader: () => void;
-}
+};
 
 type LoaderContextProvider = {
     children: ReactNode;
-}
+};
 
 const LoaderContext = createContext<Loader | undefined>(undefined);
 const LoaderProvider: FC<LoaderContextProvider> = ({ children }) => {
@@ -19,7 +19,7 @@ const LoaderProvider: FC<LoaderContextProvider> = ({ children }) => {
         },
         hideLoader: () => {
             setIsVisible(false);
-        }
+        },
     };
 
     return (
@@ -27,11 +27,11 @@ const LoaderProvider: FC<LoaderContextProvider> = ({ children }) => {
             {isVisible && <Loader />}
             {children}
         </LoaderContext.Provider>
-    )
-}
+    );
+};
 
 export {
     // eslint-disable-next-line react-refresh/only-export-components
     LoaderContext,
-    LoaderProvider
-}
+    LoaderProvider,
+};
