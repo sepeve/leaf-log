@@ -15,6 +15,10 @@ export const ROUTES = createBrowserRouter([
                 path: 'explore',
                 element: <ExplorePage />,
             },
+            {
+                path: 'explore/:query',
+                element: <ExplorePage />,
+            },
         ],
     },
 ]);

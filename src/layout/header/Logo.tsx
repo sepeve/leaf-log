@@ -1,6 +1,6 @@
-import { Box, Typography } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
-import { LeafLogLogo } from '../../assets/icons';
+import { Box, Typography } from '@mui/material';
+import { LeafLogLogo } from '@/assets/icons';
 
 export const Logo = () => {
     return (

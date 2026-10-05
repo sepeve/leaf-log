@@ -1,11 +1,16 @@
-import { SettingsProvider } from './core/context/SettingsContext';
 import { RouterProvider } from 'react-router-dom';
 import { ROUTES } from './router';
+import { SettingsProvider } from '@/core/context/SettingsContext';
+import { ErrorProvider, LoaderProvider } from '@/core/context';
 
 export default function App() {
     return (
         <SettingsProvider>
-            <RouterProvider router={ROUTES} />
+            <LoaderProvider>
+                <ErrorProvider>
+                    <RouterProvider router={ROUTES} />
+                </ErrorProvider>
+            </LoaderProvider>
         </SettingsProvider>
     );
 }

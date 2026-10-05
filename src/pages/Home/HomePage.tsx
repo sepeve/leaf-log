@@ -1,14 +1,15 @@
 import { useCallback } from 'react';
 import { HeroSection, Searcher } from './components';
 import { Journal } from './components/journal/Journal';
+import { useNavigate } from 'react-router-dom';
 
 export function HomePage() {
+
+    const navigate = useNavigate();
     const handleSearch = useCallback((value: string) => {
-        const search = (value: string) => {
-            console.log(value);
-        };
-        search(value);
-    }, []);
+        const url = `/explore/${encodeURIComponent(value)}`;
+        void navigate(url);
+    }, [navigate]);
 
     return (
         <>

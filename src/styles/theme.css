@@ -62,3 +62,5 @@
 
     --color-surface-muted: var(--surface-muted);
 }
+
+@custom-variant dark (&:where(.dark, .dark *));

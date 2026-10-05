@@ -1,5 +1,5 @@
 import { AppBar, Toolbar } from '@mui/material';
-import type { MenuItem } from '../../core/model';
+import type { MenuItem } from '@/core/model';
 import { Logo } from './Logo';
 import { Nav } from './Nav';
 

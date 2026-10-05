@@ -1,4 +1,4 @@
-import type { HomeStep } from '../../../../core/model/interfaces/home-strep.model';
+import type { HomeStep } from '@/core/model';
 import { JournalCard } from './JournalCard';
 
 const steps: HomeStep[] = [
@@ -25,8 +25,8 @@ const steps: HomeStep[] = [
 export const Journal = () => {
     return (
         <div className="flex justify-center mt-4 gap-2 w-3/4 mx-auto">
-            {steps.map((step) => (
-                <JournalCard step={step} />
+            {steps.map((step, index) => (
+                <JournalCard step={step} key={index} />
             ))}
         </div>
     );

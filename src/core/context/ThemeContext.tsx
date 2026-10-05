@@ -2,7 +2,6 @@ import { CssBaseline, type PaletteMode } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import {
     createContext,
-    useContext,
     useEffect,
     useMemo,
     useState,
@@ -16,9 +15,7 @@ type ThemeModeContextValue = {
     toggleTheme: () => void;
 };
 
-const ThemeModeContext = createContext<ThemeModeContextValue | undefined>(undefined);
 const STORAGE_KEY = 'leaf-log-theme-mode';
-
 const getInitialMode = (): PaletteMode => {
     if (typeof window === 'undefined') return 'light';
 
@@ -35,7 +32,8 @@ const getInitialMode = (): PaletteMode => {
     return window.matchMedia(match) ? 'dark' : 'light';
 };
 
-export const ThemeModeProvider: FC<{ children: ReactNode }> = ({ children }) => {
+const ThemeModeContext = createContext<ThemeModeContextValue | undefined>(undefined);
+const ThemeModeProvider: FC<{ children: ReactNode }> = ({ children }) => {
     const [mode, setMode] = useState<PaletteMode>(getInitialMode);
 
     useEffect(() => {
@@ -69,12 +67,9 @@ export const ThemeModeProvider: FC<{ children: ReactNode }> = ({ children }) => 
     );
 };
 
-// eslint-disable-next-line react-refresh/only-export-components
-export const useThemeMode = () => {
-    const context = useContext(ThemeModeContext);
-    if (!context) {
-        throw new Error('useThemeMode must be used within a ThemeModeProvider');
-    }
 
-    return context;
-};
+export {
+    // eslint-disable-next-line react-refresh/only-export-components
+    ThemeModeContext,
+    ThemeModeProvider
+}

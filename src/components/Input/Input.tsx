@@ -11,7 +11,7 @@ interface InputProps {
 
 export const Input = ({ icon, placeholder, value, extraClasses, onValueChange }: InputProps) => {
     return (
-        <Paper component="form" className="flex flex-1 items-center gap-2 border border-secondary">
+        <Paper className="flex flex-1 items-center gap-2 border border-secondary">
             {icon && (
                 <span aria-hidden="true" className="ml-2 flex shrink-0 items-center text-secondary">
                     {icon}
